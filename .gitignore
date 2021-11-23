@@ -118,7 +118,7 @@ _NCrunch_*
 nCrunchTemp_*
 
 # MightyMoose
-.mm.
+*.mm.*
 AutoTest.Net/
 
 # Web workbench (sass)
@@ -154,7 +154,7 @@ MainWebsite.sln.DotSettings
 # NuGet Packages
 *.nupkg
 # The packages folder can be ignored because of Package Restore
-*/packages/
+**/packages/*
 # except build/, which is used as an MSBuild target.
 !**/packages/build/
 !**/layout/build/
