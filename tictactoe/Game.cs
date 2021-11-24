@@ -55,10 +55,11 @@ namespace tictactoe
         //Picks a random number between 1 and 9 as computer choise and adds it to comp_picks list.
         private void CompChose(Player c)
         {
-            int cp;
+            
             Random r = new Random();
-            cp = r.Next(possible.Count);
-            possible.Remove(cp);
+            int index = r.Next(1, possible.Count) - 1;            
+            int cp = possible[index];
+            possible.RemoveAt(index);
             comp_picks.Add(cp);
             Console.WriteLine("Computer choice is {0}.", cp);
             FillBoard(cp, c.Mark);
